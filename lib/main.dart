@@ -16,14 +16,14 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[300],
       ),
       body: Center(
-        child: Image.asset('assets/test.jpg')
-
-        // Network image - using an image from the web - just put in the absolute path
-
-        //          image: NetworkImage('')
-
-//        image: AssetImage('assets/test1.jpg')
-        ,
+     child: IconButton(
+       onPressed: () {
+         // When clicked this gets printed to the terminal
+         print("you clicked me");
+       },
+       icon: Icon(Icons.alternate_email),
+       color: Colors.amber
+     )
         ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
