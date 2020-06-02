@@ -11,22 +11,20 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Title Here"), 
+        title: Text("Title Here"),
         centerTitle: true,
         backgroundColor: Colors.red[300],
       ),
       body: Center(
-        child: Text(
-          "Hello Ninjas",
-          style: TextStyle(
-            fontFamily: 'IndieFlowerCustom',
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.grey[600],
-          ),
+        child: Image.asset('assets/test.jpg')
+
+        // Network image - using an image from the web - just put in the absolute path
+
+        //          image: NetworkImage('')
+
+//        image: AssetImage('assets/test1.jpg')
+        ,
         ),
-      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text("Click"),
